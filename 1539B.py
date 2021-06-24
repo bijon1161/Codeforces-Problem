@@ -14,8 +14,8 @@ for _ in range(q):
     l,r=list(map(int,input().split()))
     new_song=""
     for i in range(l,r+1,1):
-        new_song+=song[i-1]
-    for i in new_song:
-        cou+=int(d[i])
+        dic=song[i-1]
+        cou+=int(d[dic])
+        dic=""
     print(cou)
     cou=0
